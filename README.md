@@ -1,6 +1,7 @@
 🌊 Jal-Drishti (जल-दृष्टि)
 AI-Powered Secure Water Level Monitoring
 ━━━━━━━━━━━━━━━━━━━━━
+
 📌 SOLUTION & WORKFLOW
 Jal-Drishti is an edge-to-cloud AI platform providing real-time, tamper-proof water level analytics.
 🔄 Pipeline Workflow:
@@ -21,6 +22,7 @@ Validate (GPS/QR) ➔ Capture (Live Camera) ➔ AI Read (YOLOv8 + OCR) ➔ Seal 
 • CWC integration
 • Early flood/drought warnings
 ━━━━━━━━━━━━━━━━━━━━━
+
 🏗️ CORE ARCHITECTURE
 📱 [1] Field Edge Layer
 └─ React Native / Flutter • Live Camera • GPS & QR Auth
@@ -31,6 +33,7 @@ Validate (GPS/QR) ➔ Capture (Live Camera) ➔ AI Read (YOLOv8 + OCR) ➔ Seal 
 💻 [4] Monitoring Layer
 └─ Real-Time CWC Dashboard • Leaflet Maps • Automated Risk Alerts
 ━━━━━━━━━━━━━━━━━━━━━
+
 ⚡ CHALLENGES & MITIGATION
 ⚠️ Challenge: Poor Image / Angle
 • Impact: Unclear reading
@@ -45,6 +48,7 @@ Validate (GPS/QR) ➔ Capture (Live Camera) ➔ AI Read (YOLOv8 + OCR) ➔ Seal 
 • Impact: Invalid reports
 • Mitigation: SHA-256 immutable cryptographic hashing
 ━━━━━━━━━━━━━━━━━━━━━
+
 🎯 KEY IMPACT
 • Field Staff & Operations: 100% digital, offline-capable workflow reducing manual data-entry errors.
 • Disaster Response: Automated flood and drought alerts empowering instant decision-making.
