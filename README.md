@@ -1,79 +1,27 @@
-# 🌊 Jal-Drishti — AI Eyes on Every Gauge
-
-### AI-Powered Secure & Tamper-Evident River Water-Level Monitoring
-
-Jal-Drishti is a mobile-first AI-assisted platform designed to make river water-level data collection faster, more reliable, secure, and verifiable.
-
-It combines computer vision, GPS verification, QR-based station identification, secure cloud storage, offline-first operation, and real-time monitoring to modernize traditional water-level data collection.
-
----
-
-# 🚨 Problem
-
-Accurate river water-level monitoring is essential for flood forecasting, disaster preparedness, emergency response, and water-resource management.
-
-Traditional field data collection can involve manual gauge reading, handwritten records, delayed reporting, and repetitive data entry.
-
-This can lead to:
-
-- Manual reading errors
-- Delayed transmission of observations
-- Incorrect station selection
-- Difficulty verifying field presence
-- Possibility of manipulated or incorrect records
-- Connectivity problems in remote locations
-- Lack of centralized real-time monitoring
-- Time-consuming manual reporting
-
-Jal-Drishti addresses these challenges through an integrated AI-powered and secure digital workflow.
-
----
-
-# 💡 Our Solution
-
-Jal-Drishti transforms the traditional process:
-
-**Manual Reading → Manual Entry → Delayed Reporting**
-
-into:
-
-**Verify → Capture → Detect → Validate → Secure → Sync → Monitor**
-
-The platform allows a field officer to verify the monitoring station using QR and GPS, capture the gauge through the live camera, automatically detect the water level using AI, securely store the observation, and synchronize it with the cloud for supervisor monitoring.
-
----
-
-# 🔄 Complete Workflow
-
-```text
-Field Officer
-      ↓
-Secure Login
-      ↓
-Select Monitoring Station
-      ↓
-Scan Station QR Code
-      ↓
-GPS / Geofence Verification
-      ↓
-Live Camera Capture
-      ↓
-Image Quality Check
-      ↓
-AI Gauge Detection
-      ↓
-Perspective Correction
-      ↓
-Water-Level Reading
-      ↓
-Confidence Score
-      ↓
-Validation
-      ↓
-GPS + QR + Timestamp + Image + User ID
-      ↓
-SHA-256 Integrity Hash
-      ↓
-Firebase Cloud
-      ↓
-Real-Time Supervisor Dashboard
+Jal-Drishti (जल-दृष्टि)
+AI-Powered Secure Water Level Monitoring
+📌 Solution & Workflow
+Jal-Drishti is an edge-to-cloud AI platform providing real-time, tamper-proof water level analytics.
+Validate (GPS/QR) ➔ Capture (Live Camera) ➔ AI Read (YOLOv8 + OCR) ➔ Seal (SHA-256) ➔ Sync (Cloud) ➔ Alert (Dashboards)
+📱 Smart Edge App: GPS + Geofence validation, live camera enforcement, full offline queueing.
+🤖 On-Device AI: YOLOv8 + CNN OCR for automated gauge reading with homography correction and confidence scoring.
+🔒 Cryptographic Security: Immutably sealed records via SHA-256 hash chaining and metadata verification.
+📊 Real-Time Analytics: Interactive Leaflet maps, CWC integration, and early flood/drought warnings.
+🏗️ Core Architecture
+[Field Edge Layer]       ➔ React Native / Flutter • Live Camera • GPS & QR Auth
+       │
+[AI Processing Layer]   ➔ TFLite / ONNX • YOLOv8 + CNN OCR • Homography Correction
+       │
+[Secure Cloud Layer]    ➔ Node.js / FastAPI • PostgreSQL + PostGIS • SHA-256 Ledger
+       │
+[Monitoring Layer]      ➔ Real-Time CWC Dashboard • Leaflet Maps • Automated Risk Alerts
+⚡ Challenges & Strategic Mitigation
+ChallengeImpactMitigation
+Poor Image / AngleUnclear readingOn-device AI quality check & real-time framing prompts
+Location SpoofingFraudulent dataMulti-factor verification (GPS + QR + Geofencing)
+Low ConnectivityDelayed syncOffline-first local storage with background auto-sync
+Data TamperingInvalid reportsSHA-256 immutable cryptographic hashing
+🎯 Key Impact
+Field Staff & Operations: 100% digital, offline-capable workflow reducing manual data-entry errors.
+Disaster Response: Automated flood and drought alerts empowering instant decision-making.
+Scalability & Cost: Hardware-agnostic solution deployable nationwide using existing smartphone infrastructure.
